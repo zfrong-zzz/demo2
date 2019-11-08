@@ -1,0 +1,327 @@
+.panel-body .tip{
+    color: #666666;
+    font-weight: bold;
+}
+.special-defination{
+    padding: 100px 35px;
+    position: relative;
+    z-index: 1;
+    width: 10000px;
+}
+.feature__heading{
+    background: #f4f6f8;
+   }
+   .feature:hover .feature__heading{
+    background-color: #7643ea;
+   }
+.feature:hover{
+    background-color: #7643ea;
+    box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.15);
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+.price-start p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #7643ea;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    margin-bottom: 0;
+    padding: 0 15px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 9;
+}
+
+.feature__heading h5 {
+    
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+.feature:hover .feature__heading h5,
+.feature:hover .feature__heading  p,
+.feature:hover .feature-favourite  > a {
+    color: #fff;
+}
+.feature-favourite > a {
+    color: #7643ea;
+    display: block;
+    font-size: 20px;
+   margin-top: 15px;
+    right: 0;
+}
+.mt50{
+    margin-top: 50px;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-son{
+    flex: 1;
+}
+.section-heading {
+    position: relative;
+    z-index: 1;
+  
+}
+
+.section-heading span {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.section-heading h4 {
+    font-weight: 800;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section-heading p {
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.section-heading.dark span {
+    background-color: #7643ea;
+}
+
+.section-heading.dark h4 {
+    color: #2a2a2a;
+}
+
+.section-heading.dark p {
+    color: #848484;
+}
+.dorne-features-destinations-area,
+.dorne-features-restaurant-area {
+    padding: 100px 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.single-features-area {
+    position: relative;
+    z-index: 1;
+    background-color: #f4f6f8;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.single-features-area .price-start p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #7643ea;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    margin-bottom: 0;
+    padding: 0 15px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 9;
+}
+
+.feature-content {
+    padding: 40px 30px;
+}
+
+.feature-content .feature-title h5 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.feature-content .feature-title p {
+    font-size: 14px;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.feature-favourite > a {
+    color: #7643ea;
+    font-size: 24px;
+}
+
+.single-features-area:hover {
+    background-color: #7643ea;
+    box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.single-features-area:hover .feature-content .feature-title h5,
+.single-features-area:hover .feature-content .feature-title p,
+.single-features-area:hover .feature-favourite > a {
+    color: #fff;
+}
+
+.ratings-map-area > a {
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    background-color: #7643ea;
+}
+
+.ratings-map-area > a:last-child {
+    background-color: #2a2a2a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.ratings-map-area {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9;
+}
+
+.single-features-area:hover .ratings-map-area > a:last-child {
+    background-color: #30c0a3;
+}
+.single-features-area{
+    margin-right: 60px;
+}
+.single-features-area:last-child{
+    margin-right: 0;
+}
+
+.dorne-features-destinations-area,
+.dorne-features-restaurant-area {
+    padding: 100px 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.single-features-area {
+    position: relative;
+    z-index: 1;
+    background-color: #f4f6f8;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.single-features-area .price-start p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #7643ea;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    margin-bottom: 0;
+    padding: 0 15px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 9;
+}
+
+.feature-content {
+    padding: 40px 30px;
+}
+
+.feature-content .feature-title h5 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.feature-content .feature-title p {
+    font-size: 14px;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.feature-favourite > a {
+    color: #7643ea;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.single-features-area:hover {
+    background-color: #7643ea;
+    box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.single-features-area:hover .feature-content .feature-title h5,
+.single-features-area:hover .feature-content .feature-title p,
+.single-features-area:hover .feature-favourite > a {
+    color: #fff;
+}
+
+.ratings-map-area > a {
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    background-color: #7643ea;
+}
+
+.ratings-map-area > a:last-child {
+    background-color: #2a2a2a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.ratings-map-area {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9;
+}
+
+.single-features-area:hover .ratings-map-area > a:last-child {
+    background-color: #30c0a3;
+}
+.feature-title h5{
+    margin-top: 10px;
+}
+.single-features-area{
+    padding: 0;
+}
+.slide-info__heading{
+    margin-top: 20px;
+}

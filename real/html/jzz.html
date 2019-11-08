@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<!-- Basic Page Needs -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title>欢迎使用zfrong景点解说，这里是橘子洲景区</title>
+        <meta name="description" content="A Template by Designzway team">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Designzway team">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="./css/vpplayer.css">
+
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+    	<!-- Open Sans -->
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,700italic,400,700,800italic' rel='stylesheet' type='text/css'>
+    	<!-- VarelaRound -->
+    	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    	<!-- Icon Font - Font Awesome -->
+    	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+		<!-- External -->
+    	<!-- Mobile menu -->	
+    	<link href="../external/z-nav/z-nav.css" rel="stylesheet">
+
+    	<!-- Touch slider - Swiper -->
+    	<link href="../external/swiper/idangerous.swiper.css" rel="stylesheet" />
+    	<!-- Colorbox -->
+    	<link href="../external/flickr/colorbox.css" rel="stylesheet" /> 
+
+       	<!-- Custom -->
+		<link href="../css/style.css" rel="stylesheet" media="all" />
+		<!--地图引入包-->
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+	<link rel="stylesheet" href="./css/map.css">
+	<script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+	<script src="http://webapi.amap.com/maps?v=1.4.3&key=4ed1551c5b4b20f210fcfadbd3750bb6&plugin=AMap.PlaceSearch,AMap.AdvancedInfoWindow"></script>
+	<script src="//webapi.amap.com/ui/1.0/main.js"></script>
+		
+	<!-- 语音播放 -->
+	<script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<script type="text/javascript" src="./js/vpplayer.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/vpplayer.css">  
+		<!-- Basic JavaScript-->
+		<!-- Modernizr -->
+		<script src="../external/modernizr/modernizr.custom.js"></script>
+		<script src="./js/qrcode.js"></script>
+		<link rel="stylesheet" href="./css/list.css">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+    <!--[if lt IE 9]> 
+    	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script> 
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>		
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+        <link href="css/ie9.css?v=1" rel="stylesheet" />
+	<![endif]--> 
+	<script>
+			$(document).ready(function(){
+				$("#player").vpplayer({
+					src: "http://aod.tx.xmcdn.com/group15/M08/58/DA/wKgDaFcmYQzh6qBKABTehCfJQ0o001.m4a",
+					trackName: "长沙--橘子洲",
+				});
+			});
+			</script>
+</head>
+
+<body>
+
+
+	<div class="wrapper" id="top">
+	
+		<!-- Header section -->
+		<header class="header">
+				<div class="header-fixed">
+				<div class="header-line waypoint" data-animate-down="header-up" data-animate-up="header-down">
+					<div class="container">
+						<!-- Contact information about company -->
+						<address class="contact-info pull-left hidden-lower">
+							<span class="contact-info__item">
+								<i class="fa fa-location-arrow"></i>
+								101 010 ***
+							</span>
+							<span class="contact-info__item">
+								<i class="fa fa-mobile"></i>
+								+13415635263
+							</span>
+							<span class="contact-info__item">
+								<i class="fa fa-envelope"></i>
+								@zfrong.echu.net
+							</span>
+						</address>
+						<!-- end contact information -->
+	
+						<!-- Search field -->
+						<form class="search pull-right" id="search-form" name="search-form" method="get" action="#">
+							<input class="search__field" name="search-request" type="search" placeholder="search" value="">
+							<button class="search__btn" type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+						<!-- end search field -->
+					</div>  <!-- end container -->
+				</div>
+				
+				<div class="fixed-top header-down">
+				<div class="container">
+					<!--  Logo  -->
+					<a class="logo" href="../index.html">
+						   <!-- Remove comments to choose image and add comment to h1 -->
+						   <!--<img src="images/logo-full.png" alt="">-->  
+						   <h1 class="logo__text">Z<span class="highlight">frong</span><br>
+							<span class="logo__slogan">景区解说</span>
+						   </h1>     		 
+					</a>
+					<!-- End Logo -->
+	
+					<!-- Navigation section -->
+					<nav class="z-nav">
+						<!-- Toggle for menu mobile view -->
+						<a href="#" class="z-nav__toggle">
+							<span class="menu-icon"></span>
+							<span class="menu-text">我是小菜单</span>
+							<div class="menu-head"></div>
+						</a>
+	
+						<ul class="z-nav__list">
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="../index.html">首页</a>
+								<!-- Subsidiary menu list-->			        
+							</li>
+	
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="city.html">城市</a>	
+								<ul class="z-nav__list-secondary z-nav_nested">
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="scenic.html">5A景区科普</a>
+										<li class="z-nav__item">
+											<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+					                    	<a class="z-nav__link" href="changsha.html">长沙</a>
+					                    	<ul class="z-nav__list-secondary z-nav_nested">
+					                    		<li class="z-nav__item"><a class="z-nav__link" href="jzz.html">橘子洲</a>	
+					                    	</ul>
+									
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="beijing.html">北京</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="jzz.html">故宫</a>	
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="kunming.html">云南</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="ylxs.html">玉龙雪山</a>
+														<li class="z-nav__item"><a class="z-nav__link" href="bst.html">白水台</a>	
+														<li class="z-nav__item"><a class="z-nav__link" href="eh.html">洱海</a>
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="shanghai.html">上海</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="chm.html">城隍庙</a>
+														<li class="z-nav__item"><a class="z-nav__link" href="wt.html">外滩</a>	
+
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="xianggang.html">襄阳</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="xyc.html">襄阳城</a>	
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="guangzhou.html">广州</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="cjc.html">陈家祠</a>	
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="xianggang.html">香港</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="mj.html">庙街</a>	
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="haerbin.html">哈尔滨</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="sfs.html">圣索菲亚教堂</a>	
+													</ul>
+
+										<li class="z-nav__item">
+												<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+												<a class="z-nav__link" href="hangzhou.html">杭州</a>
+												<ul class="z-nav__list-secondary z-nav_nested">
+														<li class="z-nav__item"><a class="z-nav__link" href="xh.html">西湖</a>	
+														<li class="z-nav__item"><a class="z-nav__link" href="hz.html">杭州雪景</a>	
+													</ul>
+									</ul>			        		
+							</li>
+							
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="res.html">特色餐厅</a>	
+								<ul class="z-nav__list-secondary z-nav_nested">
+										<li class="z-nav__item"><a class="z-nav__link" href="cres.html">国外</a>
+										<li class="z-nav__item"><a class="z-nav__link" href="fres.html">国内</a>
+									</ul>			               
+							</li>
+							
+							
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="sun.html">旅行天气</a>			               
+							</li>
+							
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="login.html">会员登录</a>			               
+							</li>
+	
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link z-nav__link--active" href="contact.html">联系我们</a>			               
+							</li>
+	
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="admin.html">后台管理</a>			               
+							</li>
+							
+							<li class="z-nav__item">
+								<!-- Subsidiary menu toogle button -->
+								<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+								<a class="z-nav__link" href="about.html">关于我们</a>			                
+							</li>
+						</ul>
+						<!-- end list menu item -->
+					</nav>
+					<!-- end navigation section -->
+				</div> <!-- end container -->
+	
+				<!-- Colored devider -->
+				<div class="devider-color"></div>
+				
+				</div> <!-- end fixed top block -->
+	
+				</div>
+			</header>
+			<!-- end header section -->
+		
+		<!-- end header section -->	
+		<!-- Section show current page and breadcrumb -->
+		<section class="page-indecator">
+			<div class="container">
+				<h2 class="heading">橘子洲</h2>
+				
+				<!-- Breadcrumb pattern -->
+				<ol class="breadcrumb">
+				  <li><a href="../index.html">首页</a></li>
+				  <li class="active">景区内容页</li>
+				</ol>
+
+				<!-- Default one color devider -->
+				<div class="devider devider--bottom-md"></div>
+			</div>
+		</section>
+		<!-- end section show current page and breadcrumb -->
+
+		<section class="container">
+			<div class="row">
+				<div class="col-sm-8 post-wide">
+					<div class="post">
+						<div class="image-container image-container--empty">
+							<img alt="" src="https://img.zcool.cn/community/01e5c95ccc56eaa8012141687a7bbb.jpg@1280w_1l_0o_100sh.jpg">
+							<p class="post__date post__date--rect">july 14 2018</p>
+						</div>
+
+						<h1 class="post-heading">橘子洲 [jú zi zhōu]</h1>
+						<ul class="tags post__tags">
+							<li class="tags__item tags__item--user"><a href="#" class="tags__link">by ww</a></li>
+							<li class="tags__item tags__item--comment"><a href="#" class="tags__link">5 client</a></li>
+						</ul>
+						<!-- message -->
+						<section class="container">
+							<div class="row">
+								<div class="col-sm-5 cut-section">
+									<!-- Accordion blocks -->
+											<div class="panel-group accordion accordion--blocks" id="accordion">
+											  <!-- Accordion panel -->
+											  <div class="panel panel-default">
+												  <!-- accordion panel heading -->
+												<div class="panel-heading">
+												  <h4 class="panel-title">
+													<a class="accordion-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+														<span class="marker">
+															<span class="marker__close"><i class="fa fa-plus"></i></span>
+															<span class="marker__open"><i class="fa fa-minus"></i></span>
+														</span>
+													橘子洲信息卡
+													  <span class="step__number">1</span>
+													</a>
+												  </h4>
+												</div><!-- end accordion panel heading -->
+												<!-- accordion panel body -->
+												<div id="collapseOne" class="panel-collapse collapse in">
+												  <div class="panel-body">
+												  <!-- Default control view -->
+											
+													<p> <span class="tip">中文名称:</span> 橘子洲</p>
+													<p> <span class="tip">外文名称:</span> Orange Island</p>
+													<p> <span class="tip">地理位置:</span> 湖南省长沙市</p>
+													<p> <span class="tip">气候类型:</span> 亚热带季风气候</p>
+													<p> <span class="tip">占地面积:</span> 0.914平方千米</p>	
+													<p> <span class="tip">开放时间:</span>8:00—21:00</p>
+													<p> <span class="tip">景区级别:</span>AAAAA级旅游景区</p>												
+													<p> <span class="tip">门票价格:</span>免费</p>	
+													<p> <span class="tip">著名景点:</span>问天台、毛泽东雕像、洲头沙滩广场等</p>											
+													<a class="link link--check checkout-next" data-page="page2" href="#"><i class="fa fa-check-circle"></i>Continue</a>
+
+												  </div>
+												</div><!-- end accordion panel body -->
+											  </div><!-- end accordion panel -->
+											</div><!-- end accordion blocks -->
+								</div> <!-- end col -->
+							</div><!-- end row -->
+						</section><!-- end container -->
+						<div class="lemmaWgt-lemmaCatalog container">
+							<div class="lemma-catalog">
+							<h2 class="block-title">目录</h2>
+							<div class="catalog-list column-4">
+							<ol>
+							<li class="level1">
+							<span class="index">1</span>
+							<span class="text"><a href="#1">历史沿革</a></span>
+							</li>
+							<li class="level1">
+							<span class="index">2</span>
+							<span class="text"><a href="#2">地理环境</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#2_1">位置境域</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#2_2">气候特点</a></span>
+							</li>
+							<li class="level1">
+							<span class="index">3</span>
+							<span class="text"><a href="#3">自然资源</a></span>
+							</li>
+							</ol ><ol ><li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#3_1">植物资源</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#3_2">动物资源</a></span>
+							</li>
+							<li class="level1 "">
+							<span class="index">4</span>
+							<span class="text"><a href="#4">主要景点</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#4_1">综述</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#4_2">景点</a></span>
+							</li>
+							<li class="level1">
+							<span class="index">5</span>
+							<span class="text"><a href="#5">开发建设</a></span>
+							</li>
+							</ol><ol ><li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#5_1">基础建设</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#5_2">荣誉表彰</a></span>
+							</li>
+							<li class="level1">
+							<span class="index">6</span>
+							<span class="text"><a href="#6">文化活动</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#6_1">活动</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#6_2">小吃</a></span>
+							</li>
+							<li class="level1">
+							<span class="index">7</span>
+							<span class="text"><a href="#7">交通信息</a></span>
+							</li>
+							</ol><ol><li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#7_1">门票</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#7_2">开放时间</a></span>
+							</li>
+							<li class="level2">
+							<span class="index">▪</span>
+							<span class="text"><a href="#7_3">内部交通</a></span>
+							</li>
+							</ol>							
+							</div>
+							</div>
+							</div>
+						<p>橘子洲，位于湖南省长沙市岳麓区的湘江中心，面积有91400平方米
+							是湘江下游众多冲积沙洲中面积最大的沙洲，也是世界上最大的内陆洲
+							，被誉为“中国第一洲”，由南至北，横贯江心，西望岳麓山，东临长沙城，四面环水，
+							绵延十多里，狭处横约40米，
+							宽处横约140米，形状是一个长岛。  </p> 
+						<p>橘子洲有毛泽东青年艺术雕塑、问天台等景点，史载橘子洲生成于晋惠帝永兴二年（305年），
+							为激流回旋冲积、沙石堆积而成。景区内生长着数千种花草藤蔓植物，其中名贵植物就有143种
+							。还有鸥、狐、獾等许多珍稀动物。
+								2017年12月18日，橘子洲恢复国家AAAAA级旅游景区称号。</p>
+						<blockquote class="blockquote">
+								"独立寒秋，湘江北去，橘子洲头。
+								看万山红遍，层林尽染；漫江碧透，百舸争流。"
+							
+							<div class="blockquote__devider">
+								<small class="blockquote__author">毛泽东</small>
+							</div>
+						</blockquote>
+						<ol class="list-ordered">
+								<li > <h2> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span> 语音解说</h2></li>
+								<div class=" wow fadeInUp animated" data-wow-delay=".5s" id="main">
+										<ul class="list-group">
+											<li class="list-group-item list-group-item-success" style="text-align: center;">语音介绍</li>
+											<li class="list-group-item "><div id="player"></div></li>
+											<li class="list-group-item list-group-item-success" style="text-align: center;">听不清楚？<a href="javascript:showBg();" rel="external nofollow" class="btn-primary">获取语音解说内容</a></li>
+											<div id="fullbg"></div>
+											<div id="dialog">
+											  <p class="close"><a href="#" rel="external nofollow" onclick="closeBg();">关闭</a></p>
+											  <div> <embed src="./vedio/jz.txt"></div>
+										</ul>
+										</div>
+								<li name="1" id="1"><h2>历史沿革</h2></li>
+								<p>史载橘洲生成于晋惠帝永兴二年（305年），为激流回旋、沙石堆积 而成。原有桔洲、织洲、誓洲、泉洲四岛，至清时只有上洲、中洲、下洲三岛， “望之若带，实不相连”。今演变成一串长岛，上为牛头洲，中为水陆洲，下为傅家洲。橘洲以盛产美桔而得名。湘江水流平缓，河床宽阔，由于下游受洞庭湖水顶托，因而形成绿洲
+								 片片。橘子洲久负盛名，春来，明光潋滟，沙鸥点点；秋至，柚黄橘红，清
+								 香一片；深冬，凌寒剪冰，江风戏雪，是潇湘八景之一“江天暮雪”的所在地
+								 。清光绪三十年（1904年后），长沙辟为对外开放商埠，洲上建有英国领事馆、长沙新关。</p>
+								 <p>民国十四年（1925年），毛泽东同志从广州回到湖南领导农民运动，寒秋时节，重游橘子洲，写下了《沁园春·长沙》，因此，橘子洲声名大振。
+								<p>	1950年5月，周总理和毛主席曾作过对联，上联：“橘子洲，洲旁舟，舟走洲不走”，下联：“天心阁，阁中鸽，鸽飞阁不飞”。</p>
+										<p>1960年，在橘子洲头修建橘洲公园，占地14.2公顷。</p>
+										<p>1961年，被辟建为橘洲公园，1962年对外开放，1998年更名为岳麓山风景名胜区橘子洲景区。原景区总面积约17公顷，开放区面积约6公顷。</p>
+										<p>2001年，更名为长沙岳麓山风景名胜区橘子洲景区。占地17公顷，有诗词碑、颂橘亭、”谁主沉浮”雕塑广场等景点，为湖南省名胜区。</p>
+										<p>2004年，长沙市委、市政府决定对橘子洲进行为期四年的提质改造。</p>
+										<p>2010年，长沙市委、市政府提出了推进城市国际化、把长沙打造成具有国际影响力的文化名城的目标，确立把旅游业打造成战略性支柱产业。</p>
+										<p>2016年8月，国家旅游局决定对严重不达标的橘子洲景区摘牌，是全国第二批被摘牌的景区之一。</p>
+										<p>2017年12月18日，恢复橘子洲风景区的的国家5A级旅游景区质量等级。</p>
+								<li name="2" id="2"><h2> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>地理环境</h2></li>
+									<h4 name="2_1" id="2_1">位置境域</h4>
+									<p>橘子洲位于湖南省长沙市岳麓区的湘江之中，三面环山，一面临水，地理坐标：北纬28°10′23.40″，东经112°57′18.36″，
+										橘子洲大桥从上横跨而过，离长沙市中心1千米，橘子洲地形平坦，位于湘江水面中央；南北长达6千米，最宽处仅300余米，
+										岛形狭长，属湘江水回环、泥沙淤沉堆积而成的江洲风景区。
+										橘子洲景区面积达0.9164平方千米，包括橘子洲、傅家洲，建设总面积约1.3834平方千米。</p>
+										  <div id="container"></div>
+										  
+								<li name="3" id="3"><h2> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>自然资源</h2></li>
+								<h4 name="3_1" id="3_1">植物资源</h4>
+										<p> 橘子洲生长着数千种花草藤蔓植物，其中名贵植物就有143种。橘子洲上种有柑橘数千株，李子园、板栗园、茶园和枇杷桃、梨、杏形成的经济林，傍生着山楂、弥猴桃、金樱子、野葡萄、山海棠等成片的野生林果。 [6] </p> 
+								<h4 name="3_2" id="3_2">动物资源</h4>
+										<p>	橘子洲有鹤、鹭、鸥、狐、獾等珍稀动物。</p>
+								<li name="4" id="4"><h2> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>主要景点</h2></li>
+								<h4 name="4_1" id="4_1">综述</h4>
+								<p>橘子洲建设结构规划为“一轴四区”，一轴为贯穿南北的旅游轴线，其中，四区分别为核心景区、旅游配套服务区、沙滩公园、水上运动区。景点主要围绕“生态、文化、旅游、休闲”这一主题建设有洲头颂橘亭、汉白玉诗词
+									碑、铜像广场、藤架广场、毛主席畅游湘江纪念点、揽岳亭、枕江亭、盆景园、大门广场等景点。</p>
+									<h4 name="4_2" id="4_2">景点</h4>
+									<h5>问天台</h5>
+									
+									<div class="image-container image-container--max image-container--border-inner post__image pull-left">
+											
+											<img alt="" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1797976758,3452914993&fm=26&gp=0.jpg">
+										</div>
+										<p>民国二年至七年（1913—1918年），青年毛泽
+												东在湖南省第一师范学校就读，当时的毛泽东为寻找救国救民真理，经常与同学游过湘江
+												，到橘子洲头开展各类活动，经常站在橘子洲头思考改变
+												旧世界，建立新中国。后来，毛泽东的愿望终于变成了现实。建问天台，就是来自这个缘由。</p>
+												<h5 class="mt80">百米喷泉</h5>
+												<div class="image-container image-container--max image-container--border-inner post__image pull-left">
+										
+													<img alt="" src="http://img3.imgtn.bdimg.com/it/u=2651361641,2508411254&fm=15&gp=0.jpg">
+												</div>
+												<p>橘洲沙滩体育休闲文化园有两个广场，一个是橘洲沙滩广场，另一个是天然草地运动广场，其他单体围绕这两个广场布置。
+													百米喷泉位于橘子洲中的百米高喷，百米喷泉喷
+													水时，相当于30层楼高的“建筑” 。每逢重大节假日和重大活动，湘江两
+													岸居民站在潇湘大道和湘江大道上，可看到橘洲景区正大门前百米高喷向高空喷水的场景。</p>
+													<h5 class="mt80">沙滩公园</h5>
+												<div class="image-container image-container--max image-container--border-inner post__image pull-left">
+										
+													<img alt="" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=374912096,3811122837&fm=26&gp=0.jpg">
+												</div>
+												<p>沙滩公园位于长沙市区橘子洲景区内，橘子洲风景区的沙滩公园总面积约0
+													.133平千方米，沙滩体育休闲文化园是中国国内城市核心区首个亲水运动休闲文化园， 
+													分户外运动文化休闲和室内运动休闲两大百米喷泉位于橘子洲中的百米高喷。百米喷泉喷水时，相当于30层楼高板块。
+													</p>
+													<h5 class="mt80">艺术雕塑</h5>
+													<div class="image-container image-container--max image-container--border-inner post__image pull-left">
+											
+														<img alt="" src="https://img.zcool.cn/community/018cca55499d840000019ae9db347e.jpg@1280w_1l_2o_100sh.jpg">
+													</div>
+													<p>毛泽东青年艺术雕塑伫立在长沙橘子洲头，作为长沙橘子洲景区最													
+															大景观工程的青年毛泽东艺术雕塑以青年时期的毛泽东
+															形象为基础。雕像总高度32米，长83米，宽41米。
+															橘子洲毛泽东青年艺术雕塑有着特殊的意义。青年时代的毛泽东曾在橘子洲头明志，“问苍茫大地
+															谁主沉浮”。毛泽东雕塑采用钢筋混凝土框剪结构，外表材料为花岗岩石材，总高度32米。</p>
+															<h5 class="mt80">橘洲公园</h5>
+													<div class="image-container image-container--max image-container--border-inner post__image pull-left">
+											
+														<img alt="" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1077536205,1343890309&fm=26&gp=0.jpg">
+													</div>
+													<p>橘洲公园，占地14.2公顷，从湘江大桥修一专用支桥直通岛上。洲
+														头面江建望江亭和游廊，迎面是一块巨形汉白玉纪念碑，碑上刻毛主席手书“橘
+														子洲头”四个大字和他1925年秋所作《沁园春长沙》一词中的“独立寒秋，湘江北去，橘子
+														洲头，看万山红遍，层林浸染”。</p>
+
+								<li name="5" id="5"><h2 class="mt80"> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>开发建设</h2></li>
+								<h4 name="5_1" id="5_1">基础建设</h4>
+									<p>橘子洲建设有沙滩广场、草地运动文化广场、硬地网球场、塑胶篮
+										球场、沙滩排球场、户外步行健身道和自然天文露营基地，室内运动休闲区则包括水上运动中心、运动俱乐部、咖茶读书吧、休闲吧、文化休闲中心等。
+										公园中部是占地约3万平方米的天然草地运动文化广场，广场内设隐蔽式环绕音响设备，可满足举办6万人左右的大型文化主题活动。广场草地采用耐久、耐踩踏的草种，在非主题活动时段允许市民进入活动。公园方还准备了数百顶帐篷供市民租用。
+										公园西侧的沙滩广场全部更新铺设细沙，供市民日常开展沙滩运动，并设有沙滩自行车、沙滩步道等常态化活动项目和设施。广场内设有KTV、足球、沙滩排球、沙滩足球等运动项目。
+										室内运动休闲区则还包括供市民饮茶、品咖、读书的小吧；原来的沙排比赛服务楼内设文化艺术作品展示厅、电影放映厅。也可以用天文望远镜观星。
+										橘洲沙滩广场在沙滩文化园的西侧，是橘子洲的亲水沙滩，内设沙滩自行车和沙滩步道，平常供市民开展沙滑、沙排、沙足等运动，在不同的季节可举办沙滩科技博览会、音乐节、啤酒节等各类主题活动。
+										原来的沙雕展示场地则被改造成了总占地超过3万平方米的天然草地运动文化广场，广场内设隐蔽式环绕音响设备，可满足举办30000人左右的大型文化主题活动的需要。</p>	
+										<h4 name="5_2" id="5_2">荣誉表彰</h4>
+									<p>2017年12月18日，全国旅游资源规划开发质量评定委员会组织专家组复核，恢复橘子洲景区国家AAAAA级旅游景区质量等级。</p>	
+
+								<li><h2 name="6" id="6"> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>文化活动</h2></li>
+							<h4 name="6_1" id="6_1">活动</h4>	
+								<p> 橘子洲周末焰火在每年的5月1日至10月31日期间每周六晚燃放20分钟，新
+								年的元旦、春节的除夕和元宵三个重大节假日纳入燃放，橘子洲周末音乐焰火由原来的全年燃
+								放53场，减少至30场。据旅游部门统计，自2010年8月28日晚举行首场烟花燃放活动以来，橘子
+								洲周末音乐焰火已经燃放170多场，观看人数累计超过3000万人次。
+								2014年度长沙橘子洲周末焰火暨音乐焰火大赛于5月3日正式开始，10月25日晚结束，总共28
+								场。24家中国内外企业将参加音乐焰火大赛角逐。橘子洲焰火已经成为长沙重要的旅游名片，3年多观看人数累计超3000万人次。</p>
+								<h4 name="6_2" id="6_2">小吃</h4>
+							<p>橘子洲内有创艺美食厨房，主要经营湘西土菜为主， 招牌菜猪肚包鸡，一道古老的客家传统菜。湘西原生态，张家界土菜，正宗湘西
+								腊肉，营养，健康，无污染的湘西土菜，也是该餐馆的一大特色。更有麻辣子鸡、口蘑汤泡肚、东安子鸡、发丝百页、腊味合蒸
+								、长沙年糕、长沙奶糕、牛奶法饼、徐长兴烤鸭、和记粉馆、杨裕兴面馆等美食。</p>	
+								<li><h2 name="7" id="7"> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>交通信息</h2></li>
+								<h4 name="7_1" id="7_1">门票</h4>
+							<p>	门票：橘子洲景区门票免费。</p>
+							<p>沙滩公园门票：50元/人，</p>
+							<p>观光车：20元/人（中途有5个站点可以分别上下1次）；</p>
+							
+							<p>停车场：小型车辆5元/次、大型车辆10元/次（12小时之内按次收费，超过时间，加收5元）。</p>
+							<div class="image-container image-container--max image-container--border-inner post__image pull-right">
+									<img alt="" src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D220/sign=22a46f549482d158bf825eb3b00b19d5/0ff41bd5ad6eddc4a2775d4131dbb6fd536633fc.jpg">
+								</div>
+								<h4 name="7_2" id="7_2">开放时间</h4>
+								
+								<p>开放时间：全天。</p>
+								<h4 name="7_3" id="7_3">内部交通</h4>
+								<p>地铁</p>
+								<p>长沙地铁2号线到橘子洲站下，下面为橘子洲站的首末班车时间表：</p>
+								<table border="1" style="width: 90%;">
+									<tr> <th colspan="5">
+										橘子洲末班车时间表</th></tr>
+										<tr>
+											<td>行驶方向</td>
+											<td>开站时间</td>
+											<td>首班车</td>
+											<td>末班车</td>
+											<td>关站时间</td>
+										</tr>
+										<tr>
+											<td>梅溪湖西-光达</td>
+										<td rowspan="2">6：22</td>
+										<td >6：32</td>
+										<td>23：17</td>
+										<td rowspan="2">23：42</td>
+									</tr>
+									<tr>
+										<td>光达-梅溪湖西</td>
+										<td>6：33</td>
+										<td>23：32</td>
+																		
+									</tr>
+									
+								</table>
+								<h4>公交</h4>
+								
+						<div class="row">
+								<p class="col-sm-3"><strong>1、</strong> 乘坐长沙公交1路、11路、171路、222路、406路、707路、804路在橘子洲大桥东下上橘子洲大桥即到</p>
+								<p class="col-sm-3"><strong>2、</strong> 乘坐长沙公交1路、117路、118路、128路、301路、401路在五一广场下往西走即到 </p>
+								<p class="col-sm-3"><strong>3、</strong> 乘坐长沙公交3路、6路、12路、18路、106路、109路、202路、314路、317路、358路、旅3区间线、立珊专线到华图教育（太平街口）上桥往西走即到。 </p>
+								<p class="col-sm-3"><strong>4、</strong> 想欣赏橘子洲焰火的可乘坐长沙地铁2号线到湘江中路站下，或乘坐长沙公交1路、11路、171路、222路、406路、707路、804路到橘子洲大桥东往南步行至杜甫江阁附近为最佳观赏位置。 </p>
+								<div class="clearfix"> </div>
+							</div>
+								</ol>
+						</div><!-- end post -->
+					<div>
+						<h2 class="block-title" id="user-post-start">附近景点</h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<article class="post post--similar">
+									<h3 class="not-visible">岳麓山</h3>
+									<a class="post__images" href="">
+										<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571666895320&di=6a2b855b0c83901833e2bbbde375eb87&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01cdb058f5a3cca8012049efbda3f3.jpg" alt="">
+									</a>
+									<a class="post__heading link--title" href="single-post.html">世界罕见的集“山、水、洲、城”于一体的国家AAAAA级旅游景区</a>
+									<time datetime="2014-07-15" class="post__date">July 15, 2014</time>
+								</article>
+							</div>
+							<div class="col-sm-6">
+								<article class="post post--similar">
+								<h3 class="not-visible">爱晚亭</h3>
+								<a class="post__images" href="single-post.html">
+									<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571666895320&di=dfc1f9cba9235311d74488246c4dfd77&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0316be258f87d3ea8012049efc889f0.jpg" alt="">
+								</a>
+								<a class="post__heading link--title" href="single-post.html">“停车坐爱枫林晚，霜叶红于二月花”</a>
+								<time datetime="2014-07-14" class="post__date">July 14, 2019</time>
+							</article>
+							</div>
+						</div>
+					</div>
+				</div><!-- end col -->
+
+				<aside class="col-sm-4">
+					<div class="sidebar">
+						<h2 class="heading heading--section heading--first">分类</h2>
+						<ul class="list list--marker" style="display: flex;">
+								<li class="list__item" ><a class="list__link" href=""><span class="glyphicon glyphicon-camera" aria-hidden="true"></span><br/>景点(46)</a></li>
+								<li class="list__item"><a class="list__link" href="" ><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><br/>美食 (17)</a></li>
+								<li class="list__item"><a class="list__link" href="" ><span class="glyphicon glyphicon-book" aria-hidden="true"></span><br/>文化 (20)</a></li>
+								<li class="list__item"><a class="list__link" href="" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>人物 (41)</a></li>
+								<li class="list__item"><a class="list__link" href="" ><span class="glyphicon glyphicon-education" aria-hidden="true"></span><br/>学校 (60)</a></li>
+							
+						</ul>
+
+						<a href="single-post.html" class="post post--popular">
+							<div class="image-container image-container--expository ">
+								<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4173256827,559219013&fm=26&gp=0.jpg" alt="">
+								<div class="image-container__info">
+									<span class="image-container__info-main">橘子洲全景</span>
+									<span class="image-container__info-more">May 02, 2019</span>
+								</div>
+
+								<div class="post--popular__marker">受欢迎的景点</div>
+							</div>
+						</a>
+
+						<h2 class="heading heading--section-separate">橘子洲景区二维码</h2>
+
+						<div class="text-widget">
+								<div id="code" ></div>
+						</div>
+
+						<h2 class="heading heading--section-separate">橘子洲标签</h2>
+
+						<div class="tags tags--display">
+							<a class="tags__link" href="#">烟花</a>
+							<a class="tags__link" href="#">沁园春</a>
+							<a class="tags__link" href="#">烟花</a>
+							
+						</div>
+						<h2 class="heading heading--section-separate">你看过橘子洲的烟花吗？</h2>
+						<img style="width: 50%;" src="http://5b0988e595225.cdn.sohucs.com/images/20181206/dbbf7b232d5441579af69b70481d4ff5.gif" alt="">
+						
+					
+
+					</div>
+				</aside><!-- end col -->
+			</div><!-- end row -->
+		</section>
+
+		<!-- Colored devider -->
+		<div class="devider-color bottom-space"></div>
+
+		<!-- Footer section -->
+		<footer class="footer">
+			<div class="container">
+				<!-- Twitter carousel -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper" id="twitter-feed"></div>
+					<!-- Slider pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div class="row">
+				
+				<!-- Latest post -->
+				<div class="col-sm-4">
+					<h3 class="heading-info">最后:</h3>
+
+					<div class="row">
+						<div class="col-xs-6 col-sm-12 one-column">
+							<article class="post post--latest">
+								<h3 class="not-visible">Latest post</h3>
+								<a class="post__images" href="single-post.html">
+									<img src="http://pic.51yuansu.com/pic3/cover/01/88/61/59820a544e37a_610.jpg" alt="" style="    height: 79px;
+									width: 80px">
+								</a>
+								<a class="post__text" href="city.html">中国的城市有很多，你去过几个呢，了解一下？</a>
+								<time datetime="2014-07-17" class="post__date">July 17, 2014</time>
+							</article>
+						</div>
+					
+						<div class="col-xs-6 col-sm-12 one-column">
+							<article class="post post--latest">
+								<h3 class="not-visible">Latest post</h3>
+								<a class="post__images" href="res.html">
+									<img src="http://pic.51yuansu.com/pic3/cover/02/38/41/59c261a2d6b00_610.jpg" alt="">
+								</a>
+								<a class="post__text" href="about.html">关于我们会有不足，也希望您能提出宝贵的意见</a>
+								<time datetime="2014-07-16" class="post__date">July 16, 2014</time>
+							</article>
+						</div>
+					</div>
+				</div>
+				<!-- end latest post -->
+				
+				<!-- Contact info about company -->
+				<div class="col-sm-4">
+					<h3 class="heading-info heading-info--mobile">联系方式:</h3>
+					<!-- Contact information about company -->
+						<address class="contact-info contact-info--list">
+							<div class="row">
+								<div class="col-xs-6 col-sm-12 one-column">
+									<span class="contact-info__item">
+										<i class="fa fa-location-arrow"></i>
+										广州
+									</span>
+									<span class="contact-info__item">
+										<i class="fa fa-mobile"></i>
+										+1-888-555-5555 / +1-888-123-3535
+									</span>
+								</div>
+					
+								<div class="col-xs-6 col-sm-12 one-column">
+									<span class="contact-info__item">
+										<i class="fa fa-envelope"></i>
+										info@1649990822@qq.com
+									</span>
+									<span class="contact-info__item">
+										<i class="fa fa-skype"></i>
+										zfrong-support
+									</span>
+								</div>
+							</div>
+						</address>
+						<!-- end contact information -->
+				</div>
+				<!-- end contact info -->
+				
+				<!-- Social links -->
+				<div class="col-sm-4">
+				<h3 class="heading-info heading-info--mobile">我们是努力的:</h3>
+					<div class="social social--default">
+						<!-- List with social icons -->
+						<ul>
+							<li class="social__item"><a class="social__link" href="https://twitter.com/OliaGozha" target="_blank"><i class="social__icon fa fa-twitter"></i></a></li>
+							<li class="social__item"><a class="social__link" href="https://www.facebook.com/olia.gozha" target="_blank"><i class="social__icon fa fa-facebook"></i></a></li>
+							<li class="social__item"><a class="social__link" href="https://plus.google.com/u/0/+OliaGozha/posts" target="_blank"><i class="social__icon fa fa-google-plus"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-pinterest"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-tumblr"></i></a></li>
+							<li class="social__item"><a class="social__link" href="http://www.linkedin.com/pub/olia-gozha/49/b91/268" target="_blank"><i class="social__icon fa fa-linkedin"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-youtube"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-github-alt"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-flickr"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-vimeo-square"></i></a></li>
+							<li class="social__item"><a class="social__link" href="http://dribbble.com/OliaGozha" target="_blank"><i class="social__icon fa fa-dribbble"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-stumbleupon"></i></a></li>
+							<li class="social__item"><a class="social__link" href="http://instagram.com/olechka_dumka#" target="_blank"><i class="social__icon fa fa-instagram"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-soundcloud"></i></a></li>
+							<li class="social__item"><a class="social__link" href="http://www.behance.net/olia_gozha" target="_blank"><i class="social__icon fa fa-behance"></i></a></li>
+							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-vine"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end social links -->
+				</div><!-- end row -->
+				
+				<div class="copy">
+					&copy; Zfrong, 2019. All rights reserved. Done by <a href="http://gozha.net/" target="_blank">ZW</a>
+				</div>
+
+			</div><!-- end container -->
+		</footer>
+		<!-- end footer section -->
+
+
+		<div class="top-scroll"><i class="fa fa-angle-up"></i></div>
+	
+	</div>
+
+
+	<!-- JavaScript-->
+		<!-- External-->
+		<!-- jQuery 1.10.1--> 
+        <script src="http://apps.bdimg.com/libs/jquery/1.10.1/jquery.min.map"></script>
+        <script>window.jQuery || document.write('<script src="../external/jquery/jquery-1.10.1.min.js"><\/script>')</script>
+		<!-- Bootstrap 3--> 
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!-- Mobile menu -->
+	    <script src="../external/z-nav/jquery.mobile.menu.js"></script>
+	    <!-- Touch slider - Swiper -->
+	    <script src="../external/swiper/idangerous.swiper.js"></script>
+		
+	    <!-- Twitter feed -->
+	    <script src="../external/twitterfeed/twitterfeed.js"></script>
+	    <!-- Scroll to piugin -->
+	    <script src="../external/scrollto/jquery.scrollTo.min.js"></script>
+		
+	    <!-- Waypoints -->
+	    <script src="../external/waypoint/waypoints.min.js"></script>
+	    <!-- Flickr -->
+        <script src="../external/flickr/jflickrfeed.js"></script>
+        <!-- Colorbox -->
+        <script src="../external/flickr/jquery.colorbox.js"></script>
+        
+		<!-- Custom -->
+		<script src="../js/custom.js"></script>
+		<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+
+	<script>
+		$(document).ready(function() {
+				isotopeFilters();
+			});
+		$(document).ready(function(){
+			$("#player").vpplayer({
+				src: "./audio/audio.mp3",
+				trackName: "橘子洲语音介绍"				
+			});
+		});
+		
+     
+function showBg() {
+  var bh = $("body").height();
+  var bw = $("body").width();
+  $("#fullbg").css({
+    height:bh,
+    width:bw,
+    display:"block"
+  });
+ $("#dialog").show();
+}
+//关闭灰色 jQuery 遮罩
+function closeBg() {
+$("#fullbg,#dialog").hide();
+}
+	</script>
+
+		<script>
+			$(document).ready(function() {
+				flickr();
+				scrollControls();
+			});
+		</script>
+			<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+
+		<script type="text/javascript">
+			var map = new AMap.Map('container', {
+				resizeEnable: true,
+				zoom:15,
+				center: [112.968743,28.192929]//默认的地图中心经纬度
+			});
+			  
+			new QRCode(document.getElementById('code'), "http://zfrong.echu.net/real/html/jzz.html");
+		</script>
+		
+
+</body>
+</html>

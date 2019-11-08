@@ -1,0 +1,12 @@
+#container{
+    display: inline-block;
+    position: relative;
+    height:300px;
+    clear:both;
+    z-index:0;
+}
+video{
+    height: 20px;
+    width: 40%;
+
+}
